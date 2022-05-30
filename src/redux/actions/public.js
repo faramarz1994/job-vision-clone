@@ -8,8 +8,10 @@ const publicApi = {
    if(localStorage.getItem('lang')){
     dispatch({type: 'SET_LANG', data : localStorage.getItem('lang')});
    }
- }
-
+ },
+ setHeaderSettings: (data) => (dispatch) =>{
+    dispatch({type: 'SET_HEADER_SETTINGS', data});
+ },
 };
 
 export default publicApi;

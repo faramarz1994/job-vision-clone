@@ -3,6 +3,23 @@
 const initialState = {
   isMobile: false,
   lang: null,
+  headerOptions: [
+    {
+      title: 'فرصت های شغلی',
+    },
+    {
+      title: 'محصولات',
+    },
+    {
+      title: 'رده بندی شرکت ها',
+    },
+    {
+      title: 'رزومه ساز',
+    },
+  ],
+  headerSettings: {
+    shown: true,
+  },
 };
 
 
@@ -14,6 +31,11 @@ export default function publicApi(state = initialState, action) {
         ...state,
         lang: data
       }
+      case 'SET_HEADER_SETTINGS':
+        return {
+          ...state,
+          headerSettings: data
+        }
 
 
     default:

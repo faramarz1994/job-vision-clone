@@ -3,10 +3,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        xpBlue: '#3B77BC',
-        xpDarkBlue: '#235cdb',
-        xpGreen: '#44a744',
-        xpFooterBlue: '#1290e9',
+        grayFA: '#f8f9fa',
+        grayF1: '#f1f1f1',
+        gray73: '#5c6573',
+        blueE9: '#2b6be9',
+        blueF2: '#5660f2',
+        green6F: '#45c26f',
         dark: '#27282c',
         black0: '#1d1e21',
         opac: 'rgba(255, 255, 255, 0.05)',

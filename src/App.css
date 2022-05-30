@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+*{
+  direction: rtl;
+}
 .App {
   text-align: center;
   
@@ -42,6 +44,6 @@
     transform: rotate(360deg);
   }
 }
-.rtl {
-  direction: rtl;
+.ltr {
+  direction: ltr;
 }
