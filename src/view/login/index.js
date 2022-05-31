@@ -16,7 +16,7 @@ const Login = ({ headerSettings, setHeaderSettings }) => {
   const [step, setStep] = useState(0);
 
   const layouts = [
-    <FirstStepLoginLayout />,
+    <FirstStepLoginLayout nextStep={() => setStep(step + 1)}/>,
   ];
 
   return (

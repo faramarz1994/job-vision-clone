@@ -2,8 +2,16 @@
 const initialState = {
     name: '',
     lastname: '',
+    phoneNumber: '',
+    email:'',
     token: '',
     isLogin: false,
+    loginInfo:{
+      phoneNumber: '',
+      email: '',
+      password: '',
+      otp: '',
+    }
   };
   
   
@@ -15,6 +23,14 @@ const initialState = {
           ...state,
           isLogin: true
         }
+      case 'SET_LOGIN_INFO':
+        return{
+          ...state,
+          loginInfo: {
+            ...state.loginInfo,
+            ...data
+          }
+        }  
         
   
   
