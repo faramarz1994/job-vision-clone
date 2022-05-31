@@ -11,6 +11,7 @@ module.exports = {
         green6F: '#45c26f',
         dark: '#27282c',
         black0: '#1d1e21',
+        black57: '#495057',
         opac: 'rgba(255, 255, 255, 0.05)',
 
 

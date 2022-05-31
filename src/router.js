@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import  Header  from "./components/header";
 import { publicApi } from "./redux/actions";
 import Home from "./view/home";
+import Login from './view/login'
 
 const Router = ({ lang, loadData }) => {
   useEffect(() => {
@@ -15,7 +16,8 @@ const Router = ({ lang, loadData }) => {
       <BrowserRouter>
       <Header />
         <Routes>
-          <Route path="/" exact element={<Home />} />
+          <Route path="/" exact element={<Home headerSettings={{shown: true}}/>} />
+          <Route path="/login" element={<Login headerSettings={{shown: false}}/>} />
         </Routes>
       </BrowserRouter>
     </>

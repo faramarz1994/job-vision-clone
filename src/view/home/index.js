@@ -7,7 +7,7 @@ const Home = ({
     setHeaderSettings
 }) => {
     useEffect(() => {
-        
+        setHeaderSettings(headerSettings);
     })
   return (
     <div className='bg-grayFA h-screen'>
