@@ -9,6 +9,7 @@ import googleLogo from "../../assets/img/google.svg";
 import linkedInLogo from "../../assets/img/linkedin.svg";
 import SecondStep from "./layouts/SecondStep";
 import RegisterLayout from "./layouts/RegisterLayout";
+import SetProfile from "./layouts/setProfile";
 
 const Login = ({ headerSettings, setHeaderSettings }) => {
   useEffect(() => {
@@ -20,7 +21,8 @@ const Login = ({ headerSettings, setHeaderSettings }) => {
   const layouts = [
   <FirstStepLoginLayout nextStep={() => setStep(step + 1)} />,
   <SecondStep nextStep={() => setStep(step + 1)} />,
-  <RegisterLayout />
+  <RegisterLayout nextStep={() => setStep(step + 1)}/>,
+  <SetProfile />
 ];
 
   return (

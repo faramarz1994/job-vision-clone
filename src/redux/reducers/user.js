@@ -19,6 +19,7 @@ const initialState = {
     let { type, data } = action;
     switch (type) {
       case 'LOGIN':
+        localStorage.setItem('USER_DATA', JSON.stringify({...state, isLogin: true}))
         return {
           ...state,
           isLogin: true
@@ -31,8 +32,18 @@ const initialState = {
             ...data
           }
         }  
-        
-  
+        case 'REGISTER':
+          return{
+            ...state,
+            ...data
+          }
+        case 'SET_PROFILE': 
+        return{
+          ...state,
+          ...data
+        }
+        case 'LOAD_USER_DATA':
+          return data
   
       default:
         return state;

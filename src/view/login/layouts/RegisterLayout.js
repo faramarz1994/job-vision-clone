@@ -2,8 +2,16 @@ import React, { useState } from "react";
 import Input from "../../../components/input";
 import { userAction } from "../../../redux/actions";
 import { connect } from "react-redux";
+import Select from "../../../components/select";
+import Button from "../../../components/button";
 
-const RegisterLayout = ({ loginInfo }) => {
+const RegisterLayout = ({ 
+    loginInfo, 
+    familiarityItems, 
+    register, 
+    setProfile,
+    nextStep,
+}) => {
   const [registerData, setRegisterData] = useState({
     email: "",
     phoneNumber: "",
@@ -33,16 +41,39 @@ const RegisterLayout = ({ loginInfo }) => {
         }
         value={registerData.phoneNumber}
       />
-      <Input password />
+      <Input 
+      password 
+      
+      onChange={e => setRegisterData({
+          ...registerData,
+          password: e.target.value
+      })}
+      value={registerData.password}
+      />
+        <Select 
+        customClass={"w-full my-3"}
+        onChange={(e) => setRegisterData({
+            ...registerData,
+            familiarityId: e
+        })} options={familiarityItems} />
+
+        <Button title='ثبت نام' small onClick={() => {
+            register(registerData);
+            setProfile(registerData);
+            nextStep();
+        }}/>
     </div>
   );
 };
 const mapStateToProps = (state) => ({
   loginInfo: state.userStates.loginInfo,
   captchaState: state.captchaState,
+  familiarityItems: state.publicApi.familiarityItems
 });
 const mapDispatchToProps = {
   setLoginInfo: userAction.setLoginInfo,
+  register: userAction.register,
+  setProfile: userAction.setProfile,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(RegisterLayout);

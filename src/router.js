@@ -2,13 +2,14 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import  Header  from "./components/header";
-import { publicApi } from "./redux/actions";
+import { publicApi, userAction } from "./redux/actions";
 import Home from "./view/home";
 import Login from './view/login'
 
-const Router = ({ lang, loadData }) => {
+const Router = ({ lang, loadData, loadUserData }) => {
   useEffect(() => {
     loadData();
+    loadUserData();
   }, []);
   return (
     <>
@@ -30,5 +31,6 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = {
   loadData: publicApi.loadData,
+  loadUserData: userAction.loadUserData,
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Router);

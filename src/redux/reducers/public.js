@@ -20,6 +20,40 @@ const initialState = {
   headerSettings: {
     shown: true,
   },
+  familiarityItems: [
+    {
+      id: 0,
+      value: 'نحوه آشنایی با جاب ویژن'
+    },
+    {
+      id: 2,
+      value: 'تلگرام'
+    },
+    {
+      id: 3,
+      value: 'اینستاگرام'
+    },
+    {
+      id: 4,
+      value: 'توییتر'
+    },
+    {
+      id: 5,
+      value: 'لینکدین'
+    },
+    {
+      id: 6,
+      value: 'جستجو در اینترنت'
+    },
+    {
+      id: 7,
+      value: 'توسط دوستان و آشنایان'
+    },
+    {
+      id: 8,
+      value: 'سایر'
+    },
+  ]
 };
 
 
