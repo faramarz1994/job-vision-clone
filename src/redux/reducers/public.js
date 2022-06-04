@@ -53,6 +53,9 @@ const initialState = {
       id: 8,
       value: 'سایر'
     },
+  ],
+  mostViewed: [
+    
   ]
 };
 
