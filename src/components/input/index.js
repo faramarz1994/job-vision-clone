@@ -16,7 +16,7 @@ value
     id={id ? id  : 0}
     value={value}
     placeholder={placeholder}
-    className={`${customClass} w-${width ? width : '4/5'} bg-gray-100 text-xs py-3 px-3 rounded border border-gray-200 outline-blue-300
+    className={`${customClass ? customClass : 'w-full'} bg-gray-100 text-xs py-3 px-3 rounded border border-gray-200 outline-blue-300
     focus:bg-white focus:text-black57`}
     />
   )
