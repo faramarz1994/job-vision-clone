@@ -17,7 +17,7 @@ const SecondStepLoginLayout = ({
   return (
     <div className='w-full flex flex-col items-center'>
         <Input 
-        placeholder='شماره موبایل یا آدرس ایمیل را وارد کنید'
+         placeholder='آدرس ایمیل خود را وارد کنید'
         customClass={'w-2/3 mb-5'}
         onChange={(e) => setFsInfo(e.target.value)}
         value={fsInfo}
@@ -25,12 +25,10 @@ const SecondStepLoginLayout = ({
         />
         <CaptchaForm width="w-2/3"/>
         <Button title={'ادامه'} to="" small onClick={() =>{
-            if(fsInfo.includes('@')){
+         
                setLoginInfo({email : fsInfo})
-            }
-            else{
-                setLoginInfo({phoneNumber: fsInfo})
-            }
+            
+            
             nextStep();
             sendCaptcha(captchaState);
         }}/>
