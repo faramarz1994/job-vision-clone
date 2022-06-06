@@ -14,8 +14,8 @@ const Header = ({
  }) => {
   
   return (  headerSettings.shown ? 
-    <div className='fixed h-20 bg-white top-0 rounded-b-xl w-full shadow-sm flex items-center justify-center'>
-      <div className='flex items-center justify-between w-4/5'>
+    <div className='fixed h-20 bg-white top-0 rounded-b-xl w-full shadow-sm flex items-center z-50 justify-center'>
+      <div className='flex items-center justify-between w-3/5'>
         <div className='flex items-center'>
           {
             headerOptions.map((item) => (

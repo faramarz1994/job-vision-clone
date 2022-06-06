@@ -17,7 +17,9 @@ const userAction = {
     },
     loadUserData: () => dispatch => {
         const data = JSON.parse(localStorage.getItem('USER_DATA'))
-        dispatch({type: 'LOAD_USER_DATA', data})
+        if(data){
+            dispatch({type: 'LOAD_USER_DATA', data})
+        }
     }
    };
    

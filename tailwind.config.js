@@ -6,6 +6,7 @@ module.exports = {
         grayFA: '#f8f9fa',
         grayF1: '#f1f1f1',
         gray73: '#5c6573',
+        grayB2: '#8e9cb2',
         blueE9: '#2b6be9',
         blueF2: '#5660f2',
         green6F: '#45c26f',

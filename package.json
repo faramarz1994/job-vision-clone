@@ -6,9 +6,12 @@
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "@trendyol-js/react-carousel": "^2.0.1",
+    "axios": "^0.27.2",
     "react": "^16.13.0",
     "react-beautiful-dnd": "^13.1.0",
-    "react-dom": "^16.13.0",
+    "react-dom": "^16.14.0",
+    "react-indiana-drag-scroll": "^2.1.0",
     "react-redux": "^8.0.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
@@ -20,7 +23,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start ",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
