@@ -7,15 +7,19 @@ const initialState = {
   lang: null,
   headerOptions: [
     {
+      link: '/jobs',
       title: 'فرصت های شغلی',
     },
     {
+      link: '/products',
       title: 'محصولات',
     },
     {
+      link: '/companies',
       title: 'رده بندی شرکت ها',
     },
     {
+      link: '/cv-maker',
       title: 'رزومه ساز',
     },
   ],

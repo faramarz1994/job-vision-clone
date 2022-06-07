@@ -5,24 +5,24 @@ import AllowNotifications from "./components/AllowNotif";
 import  Header  from "./components/header";
 import { publicApi, userAction } from "./redux/actions";
 import Home from "./view/home";
+import Jobs from "./view/jobs";
 import Login from './view/login'
 
-const Router = ({ notificationStatus, loadData, loadUserData }) => {
+const Router = ({ notificationStatus, loadUserData }) => {
   useEffect(() => {
     loadUserData();
     
   }, []);
   const date = new Date().getTime();
-  useEffect(() => {
-    loadUserData();
-  }, [notificationStatus])
+
   return (
     <>
-      {(notificationStatus.allowed == false || notificationStatus.nextTry <= date) ? <AllowNotifications /> : null}
+      {(notificationStatus.allowed == false || notificationStatus.nextTry <= date) ? <AllowNotifications /> : <> </>}
       <BrowserRouter>
       <Header />
         <Routes>
           <Route path="/" exact element={<Home headerSettings={{shown: true}}/>} />
+          <Route path="/jobs"  element={<Jobs headerSettings={{shown: true}}/>} />
           <Route path="/login" element={<Login headerSettings={{shown: false}}/>} />
         </Routes>
 

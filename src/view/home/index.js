@@ -13,12 +13,15 @@ const Home = ({
     headerSettings,
     setHeaderSettings,
     isLogin,
-    getCompanies
+    getCompanies,
+    defaultHeaderSettings
 }) => {
     useEffect(() => {
+      if(defaultHeaderSettings !== headerSettings){
         setHeaderSettings(headerSettings);
+        }
         getCompanies();
-    })
+    }, [])
   return (
     <div className='bg-grayFA min-h-screen flex flex-col items-center'>7
 
@@ -46,7 +49,8 @@ const Home = ({
   )
 }
 const mapStateToProps = (state) => ({
-  isLogin: state.userStates.isLogin
+  isLogin: state.userStates.isLogin,
+  defaultHeaderSettings: state.publicApi.headerSettings,
 })
 const mapDispatchToProps = {
     setHeaderSettings: publicApi.setHeaderSettings,

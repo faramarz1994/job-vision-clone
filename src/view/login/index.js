@@ -11,10 +11,12 @@ import SecondStep from "./layouts/SecondStep";
 import RegisterLayout from "./layouts/RegisterLayout";
 import SetProfile from "./layouts/setProfile";
 
-const Login = ({ headerSettings, setHeaderSettings }) => {
+const Login = ({ headerSettings, setHeaderSettings, defaultHeaderSettings }) => {
   useEffect(() => {
-    setHeaderSettings(headerSettings);
-  });
+    if(defaultHeaderSettings !== headerSettings){
+      setHeaderSettings(headerSettings);
+      }
+  }, []);
 
   const [step, setStep] = useState(0);
 
@@ -79,7 +81,9 @@ const Login = ({ headerSettings, setHeaderSettings }) => {
     </div>
   );
 };
-const mapStateToProps = (state) => ({});
+const mapStateToProps = (state) => ({
+  defaultHeaderSettings: state.publicApi.headerSettings,
+});
 const mapDispatchToProps = {
   setHeaderSettings: publicApi.setHeaderSettings,
 };

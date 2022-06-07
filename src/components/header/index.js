@@ -19,7 +19,7 @@ const Header = ({
         <div className='flex items-center'>
           {
             headerOptions.map((item) => (
-              <p className='mx-2 text-sm'>{item.title}</p>
+              <Link to={item.link} className='mx-2 text-sm'>{item.title}</Link>
             ))
           }
         </div>

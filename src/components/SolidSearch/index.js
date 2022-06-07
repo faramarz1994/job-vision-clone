@@ -9,7 +9,7 @@ const SolidSearch = ({
 }) => {
     const [searchValue, setSearchValue] = useState('');
   return (
-    <div className='w-3/5 flex items-center justify-between p-5 rounded-lg bg-white shadow-lg'>
+    <div className='w-3/5 max-w-7xl flex items-center justify-between p-5 rounded-lg bg-white shadow-lg'>
         <Input 
         placeholder='عنوان شغلی و یا شرکت...' 
         onChange={e => setSearchValue(e.target.value)}
