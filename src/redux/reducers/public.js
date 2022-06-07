@@ -1,4 +1,5 @@
 import { brands } from "../../constants/brands";
+import { features } from "../../constants/features";
 
 
 const initialState = {
@@ -191,7 +192,8 @@ const initialState = {
         description: 'در بهترین شرکت‌ها و سازمان‌های ایران استخدام شوید.'
       },
     ]
-  ]
+  ],
+  features: features,
 };
 
 

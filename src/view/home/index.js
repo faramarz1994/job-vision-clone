@@ -4,6 +4,7 @@ import BrandCarousel from '../../components/carousel'
 import LockedItem from '../../components/Locked'
 import MostViewed from '../../components/mostViewed'
 import SolidSearch from '../../components/SolidSearch'
+import OurFeatures from '../../containers/ourFeatures'
 import Services from '../../containers/Services'
 import Stats from '../../containers/stats'
 import { publicApi } from '../../redux/actions'
@@ -37,6 +38,7 @@ const Home = ({
           </div>
           <Stats />
           <Services />
+          <OurFeatures />
       </div>
     }
         

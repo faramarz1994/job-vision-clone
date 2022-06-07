@@ -12,8 +12,8 @@ const Services = ({
         <div className='flex flex-col w-3/5 mt-8 max-w-7xl'>
             {
                 services.map((row, index) => (
-                    <div className={`flex items-center p-5 py-8 justify-center ${index == 0 && 'ml-60'} ${index == 1 && 'ltr rounded-full rounded-r-none border-2 mx-16 border-gray-300 border-r-0'} 
-                    ${index == 2 && 'rounded-full pr-60 border-gray-300 border-l-0 rounded-l-none border-t-0 border-2'}`}>
+                    <div className={`flex items-center py-8 justify-center ${index == 0 && 'ml-60'} ${index == 1 && 'ltr rounded-full rounded-r-none border-4 mx-16 border-gray-100 border-r-0'} 
+                    ${index == 2 && ' rounded-full pr-60 border-gray-100 border-l-0 rounded-l-none border-t-0 border-4'}`}>
                         {
                             row.map((item, idx) => (
                                 <div className='w-1/2 flex items-end'>
