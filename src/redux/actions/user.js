@@ -20,7 +20,10 @@ const userAction = {
         if(data){
             dispatch({type: 'LOAD_USER_DATA', data})
         }
-    }
+    },
+    allowNotification: (data) => dispatch => {
+        dispatch({type: 'ALLOW_NOTIFICATION', data});
+      }
    };
    
    export default userAction;

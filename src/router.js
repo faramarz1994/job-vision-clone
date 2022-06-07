@@ -7,14 +7,18 @@ import { publicApi, userAction } from "./redux/actions";
 import Home from "./view/home";
 import Login from './view/login'
 
-const Router = ({ lang, loadData, loadUserData }) => {
+const Router = ({ notificationStatus, loadData, loadUserData }) => {
   useEffect(() => {
-    loadData();
     loadUserData();
+    
   }, []);
+  const date = new Date().getTime();
+  useEffect(() => {
+    loadUserData();
+  }, [notificationStatus])
   return (
     <>
-      <AllowNotifications />
+      {(notificationStatus.allowed == false || notificationStatus.nextTry <= date) ? <AllowNotifications /> : null}
       <BrowserRouter>
       <Header />
         <Routes>
@@ -29,10 +33,10 @@ const Router = ({ lang, loadData, loadUserData }) => {
 
 const mapStateToProps = (state) => ({
   lang: state.publicApi.lang,
+  notificationStatus: state.userStates.notification,
 });
 
 const mapDispatchToProps = {
-  loadData: publicApi.loadData,
   loadUserData: userAction.loadUserData,
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Router);
