@@ -16,7 +16,7 @@ const StatsContainer = ({
                 {
                     stats.map(({number, title, description}) => (
                         <div className='w-1/2 mt-4 flex items-center flex-col '>
-                            <div className='p-4 w-60 hover:bg-white rounded cursor-default rounded-tr-3xl'>
+                            <div className='p-4 w-60 hover:bg-white hover:shadow rounded cursor-default rounded-tr-3xl hover:first:text-green-500'>
                                 <h1 className='text-xl font-black text-blueF2'>{number} +</h1>
                                 <h2 className='text-black font-black tracking-tighter mt-3'>{title}</h2>
                                 <p className='text-xs text-grayB2 leading-normal mt-1'>{description}</p>
