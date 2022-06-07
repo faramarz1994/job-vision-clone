@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AllowNotifications from "./components/AllowNotif";
 import  Header  from "./components/header";
 import { publicApi, userAction } from "./redux/actions";
 import Home from "./view/home";
@@ -13,13 +14,14 @@ const Router = ({ lang, loadData, loadUserData }) => {
   }, []);
   return (
     <>
-      
+      <AllowNotifications />
       <BrowserRouter>
       <Header />
         <Routes>
           <Route path="/" exact element={<Home headerSettings={{shown: true}}/>} />
           <Route path="/login" element={<Login headerSettings={{shown: false}}/>} />
         </Routes>
+
       </BrowserRouter>
     </>
   );

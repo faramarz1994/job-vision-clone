@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
+import Button from '../../components/button'
 import FeatureCard from '../../components/Card/features'
 
 const OurFeatures = ({
@@ -16,6 +17,14 @@ const OurFeatures = ({
                 <FeatureCard feature={feature} key={`HOME_FEATURE__${index}`} />
             ))
         }
+
+        <div className='w-full mt-16 flex justify-center'>
+            <Button 
+            to='/login'
+            title='ثبت نام به عنوان کارجو'
+            small
+            />
+        </div>
     </div>
   )
 }
