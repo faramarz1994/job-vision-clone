@@ -23,4 +23,11 @@ export const hrScale = [
         id: 5,
         title: 'بالای ۱۰۰۰ نفر'
     },
+];
+export const  workingTimes = [
+    {
+        id: 1,
+        title: 'شنبه تا چهارشنبه (۸ تا ۱۷)'
+    }
 ]
+

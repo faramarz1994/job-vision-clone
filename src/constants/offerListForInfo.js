@@ -47,7 +47,7 @@ export const offersListForInfo = [
     jobForms: [0, 3],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3],
   },
   {
     id: 6589,
@@ -77,7 +77,7 @@ export const offersListForInfo = [
     jobForms: [0, 3],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 9925,
@@ -106,7 +106,7 @@ export const offersListForInfo = [
     jobForms: [0, 3, 2, 1],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3],
   },
   {
     id: 3345,
@@ -136,7 +136,7 @@ export const offersListForInfo = [
     jobForms: [0],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,4],
   },
   {
     id: 85789,
@@ -166,7 +166,7 @@ export const offersListForInfo = [
     jobForms: [0, 3],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,5],
   },
   {
     id: 9571,
@@ -196,7 +196,7 @@ export const offersListForInfo = [
     jobForms: [0],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [5,6],
   },
   {
     id: 225658,
@@ -226,7 +226,7 @@ export const offersListForInfo = [
     jobForms: [0],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 885288,
@@ -256,7 +256,7 @@ export const offersListForInfo = [
     jobForms: [0, 3],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 51151,
@@ -286,7 +286,7 @@ export const offersListForInfo = [
     jobForms: [0, 3, 2, 1],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 5111,
@@ -316,7 +316,7 @@ export const offersListForInfo = [
     jobForms: [0],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 5112,
@@ -346,7 +346,7 @@ export const offersListForInfo = [
     jobForms: [0, 3],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 26255,
@@ -376,7 +376,7 @@ export const offersListForInfo = [
     jobForms: [0],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 62629854,
@@ -406,7 +406,7 @@ export const offersListForInfo = [
     jobForms: [0],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 45418,
@@ -436,7 +436,7 @@ export const offersListForInfo = [
     jobForms: [0, 3],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 151522,
@@ -466,7 +466,7 @@ export const offersListForInfo = [
     jobForms: [0, 3, 2, 1],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,5,6],
   },
   {
     id: 55116,
@@ -493,10 +493,10 @@ export const offersListForInfo = [
     },
     ],
     categoryId: 12,
-    jobForms: [0, 3],
+    jobForms: [0 , 3],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,3,5,6],
   },
 
   {
@@ -527,7 +527,7 @@ export const offersListForInfo = [
     jobForms: [2],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,3],
   },
   {
     id: 62645,
@@ -557,7 +557,7 @@ export const offersListForInfo = [
     jobForms: [0, 3],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2],
   },
   {
     id: 511966,
@@ -587,7 +587,7 @@ export const offersListForInfo = [
     jobForms: [0, 3, 2, 1],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2],
   },
   {
     id: 62655852,
@@ -617,7 +617,7 @@ export const offersListForInfo = [
     jobForms: [2],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2],
   },
   {
     id: 5119051,
@@ -647,7 +647,7 @@ export const offersListForInfo = [
     jobForms: [0],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 554154,
@@ -677,7 +677,7 @@ export const offersListForInfo = [
     jobForms: [0, 3],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 45612,
@@ -707,7 +707,7 @@ export const offersListForInfo = [
     jobForms: [0],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 26252,
@@ -737,7 +737,7 @@ export const offersListForInfo = [
     jobForms: [0, 3, 2, 1],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 51190151,
@@ -767,7 +767,7 @@ export const offersListForInfo = [
     jobForms: [0],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 515120,
@@ -797,7 +797,7 @@ export const offersListForInfo = [
     jobForms: [2],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 11111,
@@ -827,7 +827,7 @@ export const offersListForInfo = [
     jobForms: [0],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 3324234,
@@ -857,7 +857,7 @@ export const offersListForInfo = [
     jobForms: [0, 3],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 234234,
@@ -887,7 +887,7 @@ export const offersListForInfo = [
     jobForms: [0, 3, 2, 1],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 234235,
@@ -917,7 +917,7 @@ export const offersListForInfo = [
     jobForms: [0],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 3453452,
@@ -947,7 +947,7 @@ export const offersListForInfo = [
     jobForms: [2],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 3453452,
@@ -977,7 +977,7 @@ export const offersListForInfo = [
     jobForms: [0],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 23523,
@@ -1007,7 +1007,7 @@ export const offersListForInfo = [
     jobForms: [0, 3],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 235235,
@@ -1037,7 +1037,7 @@ export const offersListForInfo = [
     jobForms: [0, 3, 2, 1],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 2352353,
@@ -1067,7 +1067,7 @@ export const offersListForInfo = [
     jobForms: [0],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 123123,
@@ -1097,7 +1097,7 @@ export const offersListForInfo = [
     jobForms: [0],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 345234,
@@ -1127,7 +1127,7 @@ export const offersListForInfo = [
     jobForms: [1],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
   {
     id: 546345,
@@ -1157,6 +1157,6 @@ export const offersListForInfo = [
     jobForms: [0],
     workingTimeId: 1,
     keyIndicator: [],
-    benefitIds: [1,2,3.4,5],
+    benefitIds: [1,2,3,4,5],
   },
 ];

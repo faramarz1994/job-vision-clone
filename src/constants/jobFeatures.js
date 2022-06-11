@@ -17,3 +17,29 @@ export const jobForm = [
     },
     
 ]
+export const benefits = [
+    {
+        id: 1,
+        title: 'پاداش'
+    },
+    {
+        id: 2,
+        title: 'بیمه درمان تکمیلی'
+    },
+    {
+        id: 3,
+        title: 'بسته ها و هدایای مناسبتی'
+    },
+    {
+        id: 4,
+        title: 'ناهار'
+    },
+    {
+        id: 5,
+        title: 'امریه‌ی سربازی'
+    },
+    {
+        id: 6,
+        title: 'تسهیلات تفریحی و گردشگری'
+    },
+]

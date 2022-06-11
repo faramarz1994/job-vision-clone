@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 
 import jobDetailEmpty from "../../assets/img/job-detail-empty-state.svg";
@@ -10,8 +10,28 @@ import { HiUserGroup } from 'react-icons/hi'
 import { hrScale } from "../../constants/public";
 import { MdViewList } from 'react-icons/md';
 import { brands } from "../../constants/brands";
+import JobInfo from "./layouts/jobInfo";
 
 const OfferInfo = ({ info }) => {
+    const layoutMenu = [
+        {
+            id: 0,
+            title: 'درباره شغل'
+        },
+        {
+            id: 1,
+            title: 'درباره شرکت'
+        },
+        {
+            id: 2,
+            title: 'سوابق ارسال رزومه'
+        }
+    ]
+    const [layoutNum, setLayoutNum] = useState(0); 
+    const layouts = [
+        <JobInfo />,
+        
+    ];
   return (
     <div
       className={`w-full sticky top-24 h-screen bg-white shadow rounded-lg mr-1 rounded-r-none flex flex-col items-center
@@ -28,7 +48,7 @@ const OfferInfo = ({ info }) => {
       )}
       {info.id && (
         <>
-          <div className="w-full sticky p-5 flex items-start justify-between">
+          <div className="w-full sticky top-0 bg-white z-10 p-5 flex items-start justify-between">
             <div className="flex flex-col">
               <h3 className="text-lg font-bold tracking-tight">{info.title}</h3>
               <h4 className="text-xs tracking-tight text-blueF2 mt-4">
@@ -66,6 +86,18 @@ const OfferInfo = ({ info }) => {
 
           </div>
           </div>
+          <div className="flex w-full sticky top-20 bg-white z-10 items-center border-b border-gray-200 p-5 pb-0">
+                {
+                    layoutMenu.map((item) => (
+                        <p key={`LAYOUT_MENU__${item.id}`} 
+                        onClick={() => setLayoutNum(item.id)}
+                         className={`text-xs cursor-pointer   px-2 pb-5 ${item.id == layoutNum ? 'border-b-2 border-blueF2 text-blueF2' : 'text-gray73'}`}
+                         >{item.title}</p>
+                    ))
+                }
+          </div>
+          {layouts[layoutNum]}
+          
         </>
       )}
     </div>

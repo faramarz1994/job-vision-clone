@@ -14,6 +14,7 @@ const Jobs = ({
         if(defaultHeaderSettings !== headerSettings){
         setHeaderSettings(headerSettings);
         }
+        window.scrollTo(0,0)
     }, [])
   return (
     <div className='bg-grayFA flex flex-col items-center min-h-screen'>
