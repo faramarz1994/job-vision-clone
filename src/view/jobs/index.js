@@ -4,6 +4,7 @@ import { publicApi } from '../../redux/actions'
 import SolidSearch from '../../components/SolidSearch'
 import OfferInfo from '../../containers/offerInfo'
 import OfferList from '../../containers/offerList'
+import Carousel from '../../components/carousel'
 
 const Jobs = ({
     headerSettings,
@@ -31,6 +32,8 @@ const Jobs = ({
             <OfferList />
             <OfferInfo />
         </div>
+        <Carousel className='mb-10' />
+        
     </div>
   )
 }

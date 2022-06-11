@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { connect } from "react-redux";
 
 import jobDetailEmpty from "../../assets/img/job-detail-empty-state.svg";
@@ -13,6 +13,10 @@ import { brands } from "../../constants/brands";
 import JobInfo from "./layouts/jobInfo";
 
 const OfferInfo = ({ info }) => {
+  const topRef = useRef()
+  useEffect(() => {
+    topRef?.current.scrollIntoView()
+  }, [info])
     const layoutMenu = [
         {
             id: 0,
@@ -39,7 +43,7 @@ const OfferInfo = ({ info }) => {
     >
       {!info.id && (
         <>
-          <img src={jobDetailEmpty} />
+          <img ref={topRef} src={jobDetailEmpty} />
           <p className=" text-grayB2 text-xs w-60 text-center leading-loose">
             جهت مشاهده اطلاعات آگهی شغلی یکی از موارد را از سمت راست انتخاب
             کنید.
@@ -48,8 +52,8 @@ const OfferInfo = ({ info }) => {
       )}
       {info.id && (
         <>
-          <div className="w-full sticky top-0 bg-white z-10 p-5 flex items-start justify-between">
-            <div className="flex flex-col">
+          <div  className="w-full sticky top-0 bg-white z-10 p-5 flex items-start justify-between">
+            <div  className="flex flex-col">
               <h3 className="text-lg font-bold tracking-tight">{info.title}</h3>
               <h4 className="text-xs tracking-tight text-blueF2 mt-4">
                 {info.companyName}
@@ -57,7 +61,8 @@ const OfferInfo = ({ info }) => {
             </div>
             <Button className="scale-75 -ml-5" green title="ارسال رزومه" />
           </div>
-          <p className="w-full text-right px-5 text-xs text-grayB2 tracking-tighter">
+          <p ref={topRef}></p>
+          <p  className="w-full text-right px-5  text-xs text-grayB2 tracking-tighter">
             {info.location}
           </p>
           <div className="flex w-full items-center justify-between p-5">

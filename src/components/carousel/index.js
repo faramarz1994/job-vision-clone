@@ -5,7 +5,8 @@ import { ScrollingCarousel } from '@trendyol-js/react-carousel';
 import { connect } from 'react-redux';
 
 const BrandCarousel = ({
-    brands
+    brands,
+    className
 }) => {
   return (
 
@@ -14,7 +15,7 @@ const BrandCarousel = ({
     //   leftArrow={<p>{'>'}</p>}
    
       show={3.5}
-      className={`flex w-full bg-white mt-10 px-40 rounded-lg shadow p-4 py-10`}>
+      className={`${className} flex w-full bg-white mt-10 px-40 rounded-lg shadow p-4 py-10`}>
       {
             brands.map((brand) => (
                 <div className='flex flex-col items-center w-40  mx-10'>
