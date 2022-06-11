@@ -1,4 +1,5 @@
 import { toast } from "react-toastify";
+import { offersListForInfo } from "../../constants/offerListForInfo";
 import { offersList } from "../../constants/OffersList";
 
 const offerActions = {
@@ -10,6 +11,10 @@ const offerActions = {
         } catch (error) {
             toast.error('مشکلی پیش آمده است')
         }
+    },
+    setOfferInfo: (id) => dispatch => {
+        const data = offersListForInfo.find(itm => itm.id == id);
+        dispatch({type: 'SET_OFFER_INFO', data})
     },
 };
    

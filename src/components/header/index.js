@@ -19,12 +19,12 @@ const Header = ({
         <div className='flex items-center'>
           {
             headerOptions.map((item) => (
-              <Link to={item.link} className='mx-2 text-sm'>{item.title}</Link>
+              <Link to={item.link} className='mx-2 text-xs'>{item.title}</Link>
             ))
           }
         </div>
         <div className='flex items-center ltr'>
-          <img src={desktopPrimaryLogo}  className="pr-4 border-grayF1 border-r-2"/>
+          <Link to='/'><img src={desktopPrimaryLogo}  className="pr-4 border-grayF1 border-r-2"/></Link>
           {
             isLogin ? 
             <Link to="/profile" className='bg-blueF2 flex items-center justify-between w-40 px-4 py-3 ml-3 rounded-md'>

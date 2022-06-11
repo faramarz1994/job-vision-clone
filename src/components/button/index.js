@@ -6,11 +6,12 @@ const Button = ({
     small,
     green,
     title,
-    onClick
+    onClick,
+    className
 }) => {
   return (
     <Link 
-    className={`${green ? 'bg-green6F' : 'bg-blueF2'} rounded-md ${small ? "py-2 px-16" : 'py-3 px-6'} text-white text-sm`} 
+    className={`${className} ${green ? 'bg-green6F' : 'bg-blueF2'} rounded-md ${small ? "py-2 px-16" : 'py-3 px-6'} text-white text-sm`} 
     to={to ? to : ''}
     onClick={onClick}>
         {title}

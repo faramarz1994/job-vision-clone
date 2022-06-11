@@ -1,5 +1,8 @@
 const initialState = {
-    list: []
+    list: [],
+    info: {
+
+    }
 };
 
 export default function offersStates(state = initialState, action) {
@@ -10,7 +13,12 @@ export default function offersStates(state = initialState, action) {
           ...state,
           list: data
         }
-          
+
+      case 'SET_OFFER_INFO':
+        return{
+          ...state,
+          info: data
+        }    
   
   
       default:

@@ -20,6 +20,7 @@ import yektanet from "../assets/img/companies/yektanet.jpg";
 
 export const brands = [
   {
+    companyId: 1,
     id: "eEntekhab",
     icon: eEntekhab,
     title: "انتخاب الکترونیک",
@@ -27,6 +28,7 @@ export const brands = [
     hrScaleId: 0,
   },
   {
+    companyId: 2,
     id: "EstillAlborz",
     icon: estillAlborz,
     title: "استیل البرز",
@@ -34,6 +36,7 @@ export const brands = [
     hrScaleId: 4,
   },
   {
+    companyId: 3,
     id: "alibaba",
     icon: alibaba,
     title: "علی بابا",
@@ -41,6 +44,7 @@ export const brands = [
     hrScaleId: 3,
   },
   {
+    companyId: 4,
     id: "digikala",
     icon: digikala,
     title: "دیجی کالا",
@@ -48,6 +52,7 @@ export const brands = [
     hrScaleId: 5,
   },
   {
+    companyId: 5,
     id: "bimehAseman",
     icon: bimeAseman,
     title: "بیمه آسمان",
@@ -55,6 +60,7 @@ export const brands = [
     hrScaleId: 3,
   },
   {
+    companyId: 6,
     id: "crouseGp",
     icon: croose,
     title: "گروه صنعتی کروز",
@@ -62,6 +68,7 @@ export const brands = [
     hrScaleId: 1,
   },
   {
+    companyId: 7,
     id: "hamkaranSys",
     icon: hamkaranSystem,
     title: "همکاران سیستم",
@@ -69,6 +76,7 @@ export const brands = [
     hrScaleId: 5,
   },
   {
+    companyId: 8,
     id: "HamrahAval",
     icon: hamrahAval,
     title: "همراه اول",
@@ -76,6 +84,7 @@ export const brands = [
     hrScaleId: 4,
   },
   {
+    companyId: 9,
     id: "Huawei",
     icon: huawei,
     title: "هواوی",
@@ -83,6 +92,7 @@ export const brands = [
     hrScaleId: 4,
   },
   {
+    companyId: 10,
     id: "Kaleh",
     icon: kaleh,
     title: "کاله",
@@ -90,6 +100,7 @@ export const brands = [
     hrScaleId: 5,
   },
   {
+    companyId: 11,
     id: "Loutous",
     icon: lootoos,
     title: "لوتوس",
@@ -97,6 +108,7 @@ export const brands = [
     hrScaleId: 1,
   },
   {
+    companyId: 12,
     id: "NaNo Alvand",
     icon: nanoAlvand,
     title: "نانو الوند",
@@ -104,6 +116,7 @@ export const brands = [
     hrScaleId: 3,
   },
   {
+    companyId: 13,
     id: "Nilper",
     icon: nilper,
     title: "گروه نیلپر",
@@ -111,6 +124,7 @@ export const brands = [
     hrScaleId: 3,
   },
   {
+    companyId: 14,
     id: "OfoghTolidDaroo",
     icon: ofoghTolidDaroo,
     title: "افق تولید دارو",
@@ -118,6 +132,7 @@ export const brands = [
     hrScaleId: 2,
   },
   {
+    companyId: 15,
     id: "PetroPars",
     icon: petroPars,
     title: "پترو پارس",
@@ -125,6 +140,7 @@ export const brands = [
     hrScaleId: 3,
   },
   {
+    companyId: 16,
     id: "Snapp",
     icon: snapp,
     title: "اسنپ",
@@ -132,6 +148,7 @@ export const brands = [
     hrScaleId: 4,
   },
   {
+    companyId: 17,
     id: "TakMakaron",
     icon: takmakaron,
     title: "تک ماکارون",
@@ -139,6 +156,7 @@ export const brands = [
     hrScaleId: 4,
   },
   {
+    companyId: 18,
     id: "vatanZarin",
     icon: "",
     title: "وطن زرین",
@@ -146,6 +164,7 @@ export const brands = [
     hrScaleId: 2,
   },
   {
+    companyId: 19,
     id: "yektanet",
     icon: yektanet,
     title: "یکتانت",
